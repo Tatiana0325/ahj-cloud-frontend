@@ -17,7 +17,7 @@ export default class Instances {
      `;
 
     this.container.insertAdjacentElement("beforeend", wrapper);
-    document.querySelector("#root").addEventListener("click", (event) => {
+    this.container.addEventListener("click", (event) => {
       if (event.target.classList.contains("footer")) {
         this.createInst();
       } else if (event.target.classList.contains("action-delete")) {

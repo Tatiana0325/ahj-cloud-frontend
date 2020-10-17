@@ -11,11 +11,12 @@ export default class Worklog {
         <div class="list worklog"></div>
      `;
 
-    this.container.insertAdjacentElement("beforend", wrapper);
+    this.container.insertAdjacentElement("beforeend", wrapper);
   }
 
   static showLog(elem) {
     const list = document.querySelector(".worklog");
+    console.log(list);
     const inst = document.createElement("div");
     inst.classList.add("inst");
     inst.innerHTML = `
